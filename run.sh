@@ -1,4 +1,4 @@
-poetry run python3 run_clm.py \
+poetry run python3 ./src/run_clm.py \
   --model_name_or_path=rinna/japanese-gpt2-medium \
   --train_file=./dataset/dokujo_train.txt \
   --validation_file=./dataset/dokujo_val.txt \

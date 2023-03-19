@@ -15,6 +15,7 @@ torch = "^2.0.0"
 datasets = "^2.10.1"
 evaluate = "^0.4.0"
 sentencepiece = "^0.1.97"
+scikit-learn = "^1.2.2"
 
 
 [build-system]
