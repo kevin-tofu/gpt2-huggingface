@@ -77,14 +77,16 @@ def split_title_train_val(
 if __name__ == '__main__':
     
     categories = livedoor_categories()
-    title = main(categories[1])
-    for t in title[0:20]:
-        print(t)
 
-    split_title_train_val(
-        title,
-        ratio_train = 0.8,
-        shuffle = False,
-        path_export = './dataset',
-        name_dataset = 'dokujo'
-    )
+    for cat in categories:
+        title = main(cat)
+        for t in title[0:20]:
+            print(t)
+
+        split_title_train_val(
+            title,
+            ratio_train = 0.8,
+            shuffle = False,
+            path_export = './dataset',
+            name_dataset = f'{cat}'
+        )

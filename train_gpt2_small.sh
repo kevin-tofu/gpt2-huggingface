@@ -1,0 +1,16 @@
+poetry run python3 ./src/run_clm.py \
+  --model_name_or_path=rinna/japanese-gpt2-small \
+  --train_file=./dataset/it-life-hack_train.txt \
+  --validation_file=./dataset/it-life-hack_val.txt \
+  --do_train \
+  --do_eval \
+  --num_train_epochs=10 \
+  --save_steps=500 \
+  --block_size 512 \
+  --save_total_limit=3 \
+  --per_device_train_batch_size=1 \
+  --per_device_eval_batch_size=1 \
+  --output_dir=models/it-life-hack \
+  --overwrite_output_dir \
+  --use_fast_tokenizer=False \
+  --logging_steps=5
