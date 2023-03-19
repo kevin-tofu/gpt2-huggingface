@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "huggingface-gpt2"
+version = "0.1.0"
+description = ""
+authors = ["kohei <koheitech001@gmail.com>"]
+license = "Apach-2.0"
+readme = "README.md"
+packages = [{include = "huggingface_gpt2"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.2"
+transformers = "^4.27.1"
+torch = "^2.0.0"
+datasets = "^2.10.1"
+evaluate = "^0.4.0"
+sentencepiece = "^0.1.97"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
