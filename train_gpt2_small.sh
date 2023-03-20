@@ -1,4 +1,4 @@
-poetry run python3 ./src/run_clm.py \
+CUdA_VISIBLE_DEVICES="0" poetry run python3 ./src/run_clm.py \
   --model_name_or_path=rinna/japanese-gpt2-small \
   --train_file=./dataset/it-life-hack_train.txt \
   --validation_file=./dataset/it-life-hack_val.txt \
